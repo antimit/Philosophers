@@ -35,7 +35,7 @@ void	safe_mutex_handle(t_mtx *mutex, t_opcode opcode)
 	else if (UNLOCK == opcode)
 		handle_mutex_error(pthread_mutex_unlock(mutex), opcode);
 	else if (INIT == opcode)
-		hanlde_mutex_error(pthread_mutex_init(mutex, NULL), opcode);
+		handle_mutex_error(pthread_mutex_init(mutex, NULL), opcode);
 	else if (DESTROY == opcode)
 		handle_mutex_error(pthread_mutex_destroy(mutex), opcode);
 	else

@@ -8,10 +8,11 @@ int	main(int ac, char **av)
         parse_input(&table, av);
         data_init(&table);
         dinner_start(&table);
-        clean(&table);
+        // clean(&table);
 	}
 	else
 	{
 		error_exit("Wrong input:\n" GREEN"Correct is ./philo 5 800 200 200[5]"RESET);
 	}
+	return 0;
 }
